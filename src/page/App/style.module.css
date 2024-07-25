@@ -1,0 +1,130 @@
+.sr_only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+main {
+  max-width: 736px;
+  width: 90%;
+  margin: -27px auto 0 auto;
+}
+
+.adicionarTarefa {
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+form {
+  display: flex;
+  gap: 8px;
+}
+
+form > input {
+  position: relative;
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 16px;
+
+  background: #262626;
+
+  border: 1px solid #0d0d0d;
+  border-radius: 8px;
+  outline: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: #ffffff;
+}
+
+form > input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: #808080;
+}
+
+form > button {
+  display: flex;
+  gap: 8px;
+
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+
+  background: #1e6f9f;
+  border: none;
+  border-radius: 8px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+
+  color: #f2f2f2;
+}
+
+.adicionarTarefa > button svg {
+  font-size: 18px;
+}
+
+.listTodo {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+.containerList {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.containerList b {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #4ea8de;
+}
+
+.containerList b span {
+  padding: 2px 8px;
+  color: #f2f2f2;
+  border-radius: 999px;
+
+  background: #333333;
+}
+
+.containerList > :nth-child(1) {
+  color: #4ea8de;
+}
+
+.containerList > :nth-child(2) {
+  color: #8284fa;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+
+  gap: 12px;
+}
